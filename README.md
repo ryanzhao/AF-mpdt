@@ -1,7 +1,5 @@
 # AF-mpdt
 
-This repository contains design files and reference documentation for an MPDT research project.
+> **Safety:** Before using, testing, or adapting any project materials, read [SAFETY.md](SAFETY.md).
 
-## Documentation
-
-- [Limitations and Future Work](docs/limitations-and-future-work.md)
+This repository contains design files and related materials for an MPD thruster research project.
