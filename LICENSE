@@ -1,0 +1,41 @@
+Repository license notice
+=========================
+
+This repository is distributed under multiple licenses depending on the
+material type. Unless a more specific notice is provided in a file or folder,
+the following scopes apply:
+
+1. CAD / hardware design files
+
+   License: CERN Open Hardware Licence Version 2 - Strongly Reciprocal
+   SPDX identifier: CERN-OHL-S-2.0
+   Full text: https://spdx.org/licenses/CERN-OHL-S-2.0.html
+
+   This applies to hardware source and design outputs, including files such as
+   .step, .stl, .3mf, and other mechanical/CAD artifacts.
+
+2. Images / documentation
+
+   License: Creative Commons Attribution 4.0 International
+   SPDX identifier: CC-BY-4.0
+   Full text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+   This applies to documentation, drawings, screenshots, diagrams, photos,
+   explanatory text, and similar documentation assets.
+
+3. Arduino / control code
+
+   License: MIT License
+   SPDX identifier: MIT
+   Full text: https://spdx.org/licenses/MIT.html
+
+   This applies to Arduino sketches, firmware, scripts, and other control code
+   unless a file or folder provides a different license notice.
+
+Attribution and notices
+-----------------------
+
+When reusing repository materials, preserve existing copyright, license, and
+attribution notices where present. For CERN-OHL-S-2.0 hardware design files,
+follow the source, modification, distribution, and notice requirements in that
+license.
