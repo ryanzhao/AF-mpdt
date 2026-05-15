@@ -1,44 +1,39 @@
-# AF-MPD Thruster Project
+# AF-MPD Thruster
 
-## Project Overview
+本仓库用于整理 AF-MPD（Applied-Field Magnetoplasmadynamic）thruster 原型的 CAD 资产、项目图片、测试资料与项目说明文档。
 
-This repository documents an ISEF project focused on an AF-MPD thruster, also known as an applied-field magnetoplasmadynamic thruster. The project goal is to design, manufacture, and test an applied-field magnetoplasmadynamic thruster through an iterative research and engineering process.
+## 项目资料
 
-The 3D files in this repository are research, educational, and iterative design materials. They are not final commercial-grade products, certified hardware, or production-ready engineering releases.
+- 项目完整描述：[`docs/project-description.md`](docs/project-description.md)
+- CAD 渲染图 / 设计资产：[`images/cad-renders/`](images/cad-renders/)
+- 测试平台照片：[`images/testing/`](images/testing/)
+- 项目总览图、海报图、系统结构图：[`images/project-overview/`](images/project-overview/)
 
-## Repository Contents
+## 图片与资产目录约定
 
-- `hardware/latest/`: Intended to contain the latest AF-MPD thruster design files, including the most current CAD exports and manufacturing references.
-- `hardware/iterations/`: Intended to contain past design iterations, experimental geometry, archived CAD exports, and earlier prototypes.
-- `docs/`: If added later, this directory should contain project documentation, test notes, design rationale, limitations, and future work.
-- `images/`: If added later, this directory should contain renders, photographs, diagrams, assembly images, and test setup visuals.
-- `simulation/`: If added later, this directory should contain simulation inputs, calculation scripts, console-based simulation outputs, and analysis notes.
-- `electronics/`: If added later, this directory should contain control-system code, wiring references, Arduino sketches, schematics, and hardware-control documentation.
+| 用途 | 目录 | 示例内容 |
+| --- | --- | --- |
+| CAD 渲染图 | `images/cad-renders/` | thruster 装配渲染图、喷管/阳极/阴极渲染图、制造图、当前 CAD 资产 |
+| 测试平台照片 | `images/testing/` | vacuum chamber 安装照片、test platform 照片、点火测试照片 |
+| 项目总览图 | `images/project-overview/` | 项目海报、系统结构图、总体装配图、流程图 |
 
-## Software Used
+> 说明：当前仓库已有 STEP、STL、3MF 与 PDF 设计文件已集中整理到 `images/cad-renders/`。后续如果导出 PNG/JPG/WebP 等渲染图，也应继续放入该目录。
 
-- **Fusion 360**: CAD modeling and mechanical design.
-- **VS Code**: Code organization, repository editing, and development.
-- **Arduino IDE**: Control-system development or hardware-control code.
-- **Console-based simulation**: Simulation, calculations, or numerical output during analysis.
-- **ChatGPT / Codex**: File organization and documentation assistance.
+## 系统组成概览
 
-## Current Limitations and Future Improvements
+AF-MPD thruster 测试系统建议按以下模块组织：
 
-This project is still under development and has areas that can be improved through further design review, fabrication, testing, simulation, and documentation. Future work may include improved CAD organization, better validation data, clearer assembly instructions, more complete electronics documentation, and additional simulation results.
+1. **Thruster**：阴极、阳极喷口、导电板、夹具、分隔件与磁体支架。
+2. **Vacuum chamber**：为点火与放电测试提供低压环境。
+3. **Test platform**：固定 thruster，并承载供气、供电和测量接口。
+4. **Control panel**：集中控制供电、推进剂流量、触发、仪表读数与安全联锁。
+5. **Frame**：支撑真空舱、控制面板和测试平台等硬件。
 
-For a dedicated discussion of known limitations and planned improvements, see `docs/limitations-and-future-work.md` when that file is added.
+更多项目动机、工作原理、设计迭代、测试方法、当前结果和未来改进方向见 [`docs/project-description.md`](docs/project-description.md)。
 
-## How Researchers Can Use This Repository
+## 后续补充建议
 
-Researchers, students, and educators can use this repository to:
-
-- Download STEP, STL, or 3MF files as reference designs for educational or research purposes.
-- Compare the latest design files with historical iterations to understand the design-development process.
-- Build on the existing repository structure to improve the thruster geometry, documentation, simulation workflow, or electronics/control system.
-
-Any reuse of these files should account for the experimental nature of the designs and should include independent engineering review, safety review, and validation before fabrication or testing.
-
-## License
-
-A license file may be added later to define reuse, modification, attribution, and distribution terms. Until a license is added, do not assume permission for unrestricted commercial use.
+- 在 `images/project-overview/` 添加系统结构图、项目海报和总体装配图。
+- 在 `images/testing/` 添加真空舱、测试平台、控制面板和点火测试照片。
+- 在 `images/cad-renders/` 添加从 CAD 软件导出的高分辨率渲染图，并保留必要的设计源文件。
+- 在 `docs/` 中继续添加测试报告、BOM、装配步骤和安全检查清单。
