@@ -1,8 +1,8 @@
-# Frame
+# Test Platform
 
 ## Function
 
-The frame subsystem provides the structural support for mounting the thruster assembly, test fixtures, control hardware, and associated components.
+The test platform subsystem supports and positions the thruster, chamber interfaces, instrumentation, and related test equipment during experimental runs.
 
 ## Included CAD files
 
